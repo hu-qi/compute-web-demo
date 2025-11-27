@@ -31,7 +31,7 @@ const zgTestnet = defineChain({
 
 const config = getDefaultConfig({
   appName: '0G Broker Starter Kit',
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID!,
   chains: [zgTestnet],
   ssr: true,
 });
